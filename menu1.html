@@ -26,9 +26,9 @@
 			<a href="#"><div class="button2"> MULAI </div></a>
 		</div>
 	</div>
-		<div class="ringMenu">
+		<div id="myDIV" class="ringMenu">
 			<ul class="containerList">
-				<li id="maain" class="main active"><a href="#main">Hover</a></li>
+				<li class="main"><a id="test" href="#" onclick="myFunction()">Hover</a></li> <!-- ganti jadi button-->
 				<li class="right material-icons md-48 md-dark" onclick="changedH1('WEB1');changedColor('#f0f0f0');changedP('fIRST ')">sports_esports</li>
 				<li class="right2"><a href="#" class="material-icons md-48 md-dark" onclick="changedH1('web2');changedColor('#ffffff');changedP('dUA BANG');changedC('#f0f0f0');">emoji_people</a></li>
 				<li class="bottom"><a href="#" class="material-icons md-48 md-dark">public</a></li>
@@ -38,17 +38,11 @@
 		</div>	
 </section>
 <script>
-	var text=document.getElementById('maain');
-	function toggleClass(){
-		if (text.classList=='active'){
-			text.classList.remove('active')}
-			else{
-				text.classList.add('active')
-			}
-		}
-</script>
-<script>
 
+	function myFunction() {
+   		var element = document.getElementById("myDIV");
+   		element.classList.toggle("active"); // <!-- function sdh betul sisa diperbaiki jadi button -->
+	}
 	function  changedColor(color){
 		const cirle	= document.querySelector('.circle') ;
 		cirle.style.background = color ;
