@@ -158,7 +158,7 @@ ul, li {
   line-height: 50px;
 }
 
-.ringMenu ul li a:hover {
+.ringMenu ul li a:active {
   opacity: 0.7;
 }
 
@@ -174,7 +174,7 @@ ul, li {
   opacity: 0;
 }
 
-.ringMenu:hover ul li:not(.main) {
+.ringMenu:active ul li:not(.main) {
   -webkit-transform: rotate(0) scale(5);
           transform: rotate(0) scale(5);
   opacity: 1;
@@ -414,3 +414,4 @@ header {
   background: #E4E1E1;
   border-radius: 50%;
 }
+/*# sourceMappingURL=style.css.map */

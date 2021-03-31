@@ -140,7 +140,7 @@ ul , li {
 	width: 30px;height: 30px;
 	text-align: center;line-height: 50px;
 }
-.ringMenu ul li a:hover {
+.ringMenu ul li a:active {
 	opacity: 0.7;
 }
 .ringMenu ul li.main a {
@@ -150,7 +150,7 @@ ul , li {
 	transform: rotate(-90deg)scale(0);
 	opacity: 0;
 }
-.ringMenu:hover ul li:not(.main) {
+.ringMenu:active ul li:not(.main) {
 	transform: rotate(0)scale(5);
 	opacity: 1;
 }

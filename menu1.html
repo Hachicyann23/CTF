@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="assets/css/style.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<title>SubWeb</title>
 </head>
@@ -28,7 +28,7 @@
 	</div>
 		<div class="ringMenu">
 			<ul class="containerList">
-				<li class="active main"><a href="#main">Hover</a></li>
+				<li id="maain" class="main active"><a href="#main">Hover</a></li>
 				<li class="right material-icons md-48 md-dark" onclick="changedH1('WEB1');changedColor('#f0f0f0');changedP('fIRST ')">sports_esports</li>
 				<li class="right2"><a href="#" class="material-icons md-48 md-dark" onclick="changedH1('web2');changedColor('#ffffff');changedP('dUA BANG');changedC('#f0f0f0');">emoji_people</a></li>
 				<li class="bottom"><a href="#" class="material-icons md-48 md-dark">public</a></li>
@@ -38,6 +38,17 @@
 		</div>	
 </section>
 <script>
+	var text=document.getElementById('maain');
+	function toggleClass(){
+		if (text.classList=='active'){
+			text.classList.remove('active')}
+			else{
+				text.classList.add('active')
+			}
+		}
+</script>
+<script>
+
 	function  changedColor(color){
 		const cirle	= document.querySelector('.circle') ;
 		cirle.style.background = color ;
