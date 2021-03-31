@@ -21,21 +21,37 @@
 	<section class="sec2">
 	<div class="container2">
 		<div class="Judul2">
-			<h1>Web Exploitation</h1>
-			<p>Solve The Problem And Find flag!</p>
+			<h1 id="master">Web Exploitation</h1>
+			<p id="master2">Solve The Problem And Find flag!</p>
 			<a href="#"><div class="button2"> MULAI </div></a>
 		</div>
 	</div>
 		<div class="ringMenu">
 			<ul class="containerList">
-				<li class="main"><a href="#main">Hover</a></li>
-				<li class="right"><a href="#" class="material-icons md-48 md-dark">sports_esports</a></li>
-				<li class="right2"><a href="#" class="material-icons md-48 md-dark">emoji_people</a></li>
+				<li class="active main"><a href="#main">Hover</a></li>
+				<li class="right material-icons md-48 md-dark" onclick="changedH1('WEB1');changedColor('#f0f0f0');changedP('fIRST ')">sports_esports</li>
+				<li class="right2"><a href="#" class="material-icons md-48 md-dark" onclick="changedH1('web2');changedColor('#ffffff');changedP('dUA BANG');changedC('#f0f0f0');">emoji_people</a></li>
 				<li class="bottom"><a href="#" class="material-icons md-48 md-dark">public</a></li>
 				<li class="bottom2"><a href="#" class="material-icons md-48 md-dark">free_breakfast</a></li>
 				<li class="left"><a href="#" class="material-icons md-48 md-dark">beach_access</a></li>
 			</ul>
-		</div>
+		</div>	
 </section>
+<script>
+	function  changedColor(color){
+		const cirle	= document.querySelector('.circle') ;
+		cirle.style.background = color ;
+	}
+	function  changedC(color){
+		const button	= document.querySelector('.button2') ;
+		button.style.background = color ;
+	}
+	function changedH1(anything){
+		document.getElementById('master').innerHTML = anything;
+	}
+	function changedP(anything){
+		document.getElementById('master2').innerHTML = anything;
+	}
+</script>
 </body>
 </html>

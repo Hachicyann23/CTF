@@ -147,6 +147,7 @@ ul, li {
   -webkit-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
   border-radius: 50px;
+  cursor: pointer;
 }
 
 .ringMenu ul li a {
@@ -213,7 +214,7 @@ ul, li {
   position: absolute;
 }
 
-.right a {
+.right {
   color: #ffa726;
 }
 

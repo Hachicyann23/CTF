@@ -133,6 +133,7 @@ ul , li {
 .ringMenu ul li {
 	transition: all 0.7s ease-in-out;
 	border-radius: 50px;
+	cursor: pointer;
 }
 .ringMenu ul li a {
 	display: block;
@@ -177,7 +178,7 @@ ul , li {
 	position: absolute;
 }
 
-.right a{color: #ffa726;}
+.right {color: #ffa726;}
 .right2 a{color: #ef5350;}
 .bottom a{color: #9ccc65;}
 .bottom2 a{color: #ecdd50;}
