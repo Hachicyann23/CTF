@@ -19,43 +19,54 @@
 		</div>
 	</header>
 	<section class="sec2">
-	<div class="container2">
+	<div class="container2">	
 		<div class="Judul2">
-			<h1 id="master">Web Exploitation</h1>
-			<p id="master2">Solve The Problem And Find flag!</p>
-			<a href="#"><div class="button2"> MULAI </div></a>
+			<h1 id="h1ID">Web Exploitation</h1>
+			<p id="pID">Solve The Problem And Find flag!</p>
+			<a id="linka" href="#" ><div class="button2"> MULAI </div></a>
 		</div>
 	</div>
 		<div id="myDIV" class="ringMenu">
 			<ul class="containerList">
-				<li class="main"><a id="test" href="#" onclick="myFunction()">Hover</a></li> <!-- ganti jadi button-->
-				<li class="right material-icons md-48 md-dark" onclick="changedH1('WEB1');changedColor('#f0f0f0');changedP('fIRST ')">sports_esports</li>
-				<li class="right2"><a href="#" class="material-icons md-48 md-dark" onclick="changedH1('web2');changedColor('#ffffff');changedP('dUA BANG');changedC('#f0f0f0');">emoji_people</a></li>
-				<li class="bottom"><a href="#" class="material-icons md-48 md-dark">public</a></li>
-				<li class="bottom2"><a href="#" class="material-icons md-48 md-dark">free_breakfast</a></li>
-				<li class="left"><a href="#" class="material-icons md-48 md-dark">beach_access</a></li>
+				<li class="main"onclick="myFunction()">Hover</li> 
+				<li class="one material-icons md-48 md-dark" onclick="changedH1('Web Exploitation');changedColor('#EED5D1');changedColorText('#991901');changedP('Solve The Problem And Find flag!');changedButton('#991901');changedLink('#testlink')">sports_esports</li>
+				<li class="two material-icons md-48 md-dark" onclick="changedH1('Cryotography');changedColorText('#013499');changedColor('#98DAE9');changedP('Solve The Problem And Find flag!');changedButton('#017E99');changedLink('#tes tlink2')">emoji_people</   li>
+				<li class="three material-icons md-48 md-dark"onclick="changedH1('Forensik');changedColorText('#C7771A');changedColor('#E8D8C7');changedP('Solve The Problem And Find flag!');changedButton('#C7771A');changedLink('#tes tlink2')">public</li>
+				<li class="four material-icons md-48 md-dark" onclick="changedH1('General Skill');changedColorText('#1AC76A');changedColor('#D1EBDD');changedP('Solve The Problem And Find flag!');changedButton('#11A655');changedLink('#tes tlink2')">free_breakfast</li>
+				<li class="five material-icons md-48 md-dark" onclick="changedH1('Binary Exploitation');changedColorText('#013499');changedColor('#CBD8F7 ');changedP('Solve The Problem And Find flag!');changedButton('#1A4BC7');changedLink('#tes tlink2')">beach_access</li>
 			</ul>
 		</div>	
 </section>
 <script>
-
+//function for active class 
 	function myFunction() {
    		var element = document.getElementById("myDIV");
-   		element.classList.toggle("active"); // <!-- function sdh betul sisa diperbaiki jadi button -->
+   		element.classList.toggle("active"); 
 	}
+
+//function  for changed display of menu and background
 	function  changedColor(color){
 		const cirle	= document.querySelector('.circle') ;
 		cirle.style.background = color ;
 	}
-	function  changedC(color){
+	function  changedButton(color){
 		const button	= document.querySelector('.button2') ;
 		button.style.background = color ;
 	}
+	function  changedColorText(color){
+		const cirle	= document.getElementById('h1ID') ;
+		cirle.style.color = color ;
+	}
 	function changedH1(anything){
-		document.getElementById('master').innerHTML = anything;
+		document.getElementById('h1ID').innerHTML = anything;
 	}
 	function changedP(anything){
-		document.getElementById('master2').innerHTML = anything;
+		document.getElementById('pID').innerHTML = anything;
+	}
+
+//changed link button "MULAI"
+function changedLink(anything){
+		document.getElementById('linka').href = anything;
 	}
 </script>
 </body>

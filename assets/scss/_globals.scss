@@ -4,7 +4,6 @@
 	box-sizing: border-box;
 	font-family: 'Nunito', sans-serif;
 }
-////// test edit eoiajweflawlkglwglnfkjnkdjnfagawehg;awhe;g;iiahwe
 body{
 	height: 100vh;
 	background: $white;
@@ -123,10 +122,10 @@ ul , li {
 	position: relative;
 	width: 70px;
 }
-.ringMenu ul a {
+.ringMenu ul  {
 	text-decoration: none;
 }
-.ringMenu ul .main a {
+.ringMenu ul .main  {
 	color: black;
 	font-size: 28px;
 }
@@ -135,54 +134,43 @@ ul , li {
 	border-radius: 50px;
 	cursor: pointer;
 }
-.ringMenu ul li a {
-	display: block;
-	width: 30px;height: 30px;
-	text-align: center;line-height: 50px;
-}
-.ringMenu ul li a:active {
-	opacity: 0.7;
-}
-.ringMenu ul li.main a {
+
+.ringMenu ul li.main {
 	width: 70px; height: 70px;line-height: 70px;
 }
 .ringMenu ul li:not(.main){
 	transform: rotate(-90deg)scale(0);
 	opacity: 0;
 }
-.ringMenu:active ul li:not(.main) {
+.ringMenu.active ul li:not(.main) {
 	transform: rotate(0)scale(5);
 	opacity: 1;
 }
-.ringMenu ul li:main {
-	background: #bdbdbd;
-}
-.ringMenu ul li.bottom {
-	transform-origin: 50% -50px;
-	position: absolute;
-}
-.ringMenu ul li.bottom2 {
-	transform-origin: 100px -50%;
-	position: absolute;
-}
-.ringMenu ul li.right {
-	transform-origin: -100px 50%;
-	position: absolute;
-}
-.ringMenu ul li.right2 {
-	transform-origin: -50px -40px;
-	position: absolute;
-}
-.ringMenu ul li.left {
+
+.ringMenu ul li.one {
 	transform-origin: 150px 50px;
 	position: absolute;
+	color: $orange;
+}
+.ringMenu ul li.two {
+	transform-origin: 100px -50%;
+	position: absolute;
+	color: $iconMerah;
 }
 
-.right {color: #ffa726;}
-.right2 a{color: #ef5350;}
-.bottom a{color: #9ccc65;}
-.bottom2 a{color: #ecdd50;}
-.left a{color: #ab47bc;}
-
-
+.ringMenu ul li.three {
+	transform-origin: 50% -50px;
+	position: absolute;
+	color: $iconHijau;
+}
+.ringMenu ul li.four {
+	transform-origin: -50px -40px;
+	position: absolute;
+	color: $iconKuning;
+}
+.ringMenu ul li.five {
+	transform-origin: -100px 50%;
+	position: absolute;
+	color: $iconUngu;
+}
 .material-icons.md-48{font-size: 18px;}

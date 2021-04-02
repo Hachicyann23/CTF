@@ -15,7 +15,7 @@ body {
 
 .circle {
   position: absolute;
-  background: #EED5D1;
+  background: #F5D0CA;
   width: 100%;
   height: 100%;
   -webkit-clip-path: circle(50% at 70% 3%);
@@ -134,11 +134,11 @@ ul, li {
   width: 70px;
 }
 
-.ringMenu ul a {
+.ringMenu ul {
   text-decoration: none;
 }
 
-.ringMenu ul .main a {
+.ringMenu ul .main {
   color: black;
   font-size: 28px;
 }
@@ -150,19 +150,7 @@ ul, li {
   cursor: pointer;
 }
 
-.ringMenu ul li a {
-  display: block;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  line-height: 50px;
-}
-
-.ringMenu ul li a:active {
-  opacity: 0.7;
-}
-
-.ringMenu ul li.main a {
+.ringMenu ul li.main {
   width: 70px;
   height: 70px;
   line-height: 70px;
@@ -174,63 +162,44 @@ ul, li {
   opacity: 0;
 }
 
-.ringMenu:active ul li:not(.main) {
+.ringMenu.active ul li:not(.main) {
   -webkit-transform: rotate(0) scale(5);
           transform: rotate(0) scale(5);
   opacity: 1;
 }
 
-.ringMenu ul li:main {
-  background: #bdbdbd;
-}
-
-.ringMenu ul li.bottom {
-  -webkit-transform-origin: 50% -50px;
-          transform-origin: 50% -50px;
-  position: absolute;
-}
-
-.ringMenu ul li.bottom2 {
-  -webkit-transform-origin: 100px -50%;
-          transform-origin: 100px -50%;
-  position: absolute;
-}
-
-.ringMenu ul li.right {
-  -webkit-transform-origin: -100px 50%;
-          transform-origin: -100px 50%;
-  position: absolute;
-}
-
-.ringMenu ul li.right2 {
-  -webkit-transform-origin: -50px -40px;
-          transform-origin: -50px -40px;
-  position: absolute;
-}
-
-.ringMenu ul li.left {
+.ringMenu ul li.one {
   -webkit-transform-origin: 150px 50px;
           transform-origin: 150px 50px;
   position: absolute;
-}
-
-.right {
   color: #ffa726;
 }
 
-.right2 a {
+.ringMenu ul li.two {
+  -webkit-transform-origin: 100px -50%;
+          transform-origin: 100px -50%;
+  position: absolute;
   color: #ef5350;
 }
 
-.bottom a {
+.ringMenu ul li.three {
+  -webkit-transform-origin: 50% -50px;
+          transform-origin: 50% -50px;
+  position: absolute;
   color: #9ccc65;
 }
 
-.bottom2 a {
+.ringMenu ul li.four {
+  -webkit-transform-origin: -50px -40px;
+          transform-origin: -50px -40px;
+  position: absolute;
   color: #ecdd50;
 }
 
-.left a {
+.ringMenu ul li.five {
+  -webkit-transform-origin: -100px 50%;
+          transform-origin: -100px 50%;
+  position: absolute;
   color: #ab47bc;
 }
 
@@ -332,7 +301,7 @@ header {
   font-size: 3em;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  color: rgba(153, 25, 1, 0.8);
+  color: #991901;
 }
 
 .container2 p {
@@ -366,7 +335,7 @@ header {
   position: relative;
   margin: 100px  0 0 130px;
   border-radius: 30px;
-  background: rgba(153, 25, 1, 0.8);
+  background: #991901;
   -webkit-box-shadow: 5px 5px 10px 5px #524848c2;
           box-shadow: 5px 5px 10px 5px #524848c2;
 }
