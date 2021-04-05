@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<title>SubWeb</title>
 </head>
+
 <body>
 	<div class="circle"></div>
 	<header>
@@ -19,57 +21,37 @@
 		</div>
 	</header>
 	<section class="sec2">
-	<div class="container2">	
-		<div class="Judul2">
-			<h1 id="h1ID">Web Exploitation</h1>
-			<p id="pID">Solve The Problem And Find flag!</p>
-			<a id="linka" href="#" ><div class="button2"> MULAI </div></a>
+		<div class="container2">
+			<div class="Judul2">
+				<h1 id="h1ID">Web Exploitation</h1>
+				<p id="pID">Solve The Problem And Find flag!</p>
+				<a id="linka" href="#">
+					<div class="button2"> MULAI </div>
+				</a>
+			</div>
 		</div>
-	</div>
 		<div id="myDIV" class="ringMenu">
 			<ul class="containerList">
-				<li class="main"onclick="myFunction()">Hover</li> 
-				<li class="one material-icons md-48 md-dark" onclick="changedH1('Web Exploitation');changedColor('#EED5D1');changedColorText('#991901');changedP('Solve The Problem And Find flag!');changedButton('#991901');changedLink('#WEB')">sports_esports</li>
-				<li class="two material-icons md-48 md-dark" onclick="changedH1('Cryotography');changedColorText('#013499');changedColor('#98DAE9');changedP('Solve The Problem And Find flag!');changedButton('#017E99');changedLink('#Cryptography')">emoji_people</   li>
-				<li class="three material-icons md-48 md-dark"onclick="changedH1('Forensik');changedColorText('#C7771A');changedColor('#E8D8C7');changedP('Solve The Problem And Find flag!');changedButton('#C7771A');changedLink('#Forensik')">public</li>
-				<li class="four material-icons md-48 md-dark" onclick="changedH1('General Skill');changedColorText('#1AC76A');changedColor('#D1EBDD');changedP('Solve The Problem And Find flag!');changedButton('#11A655');changedLink('#General')">free_breakfast</li>
-				<li class="five material-icons md-48 md-dark" onclick="changedH1('Binary Exploitation');changedColorText('#013499');changedColor('#CBD8F7 ');changedP('Solve The Problem And Find flag!');changedButton('#1A4BC7');changedLink('#Binary')">beach_access</li>
+				<li id="ICmi" class="main material-icons" onclick="myFunction();changedIcon('pause_circle')">play_circle
+				</li>
+				<li class="one material-icons md-48 md-dark"
+					onclick="changedH1('Web Exploitation');changedColor('#EED5D1');changedColorText('#991901');changedP('Solve The Problem And Find flag!');changedButton('#991901');changedLink('#WEB')">
+					language</li>
+				<li class="two material-icons md-48 md-dark"
+					onclick="changedH1('Cryotography');changedColorText('#013499');changedColor('#98DAE9');changedP('Solve The Problem And Find flag!');changedButton('#017E99');changedLink('#Cryptography')">
+					https</li>
+				<li class="three material-icons md-48 md-dark"
+					onclick="changedH1('Forensik');changedColorText('#C7771A');changedColor('#E8D8C7');changedP('Solve The Problem And Find flag!');changedButton('#C7771A');changedLink('#Forensik')">
+					fingerprint</li>
+				<li class="four material-icons md-48 md-dark"
+					onclick="changedH1('General Skill');changedColorText('#1AC76A');changedColor('#D1EBDD');changedP('Solve The Problem And Find flag!');changedButton('#11A655');changedLink('#General')">
+					lightbulb</li>
+				<li class="five material-icons md-48 md-dark"
+					onclick="changedH1('Binary Exploitation');changedColorText('#013499');changedColor('#CBD8F7 ');changedP('Solve The Problem And Find flag!');changedButton('#1A4BC7');changedLink('#Binary')">
+					extension</li>
 			</ul>
-		</div>	
-</section>
-<script>
-//function for active class 
-	function myFunction() {
-   		var element = document.getElementById("myDIV");
-   		element.classList.toggle("active"); 
-	}
-
-//function  for changed display of menu and background
-	function  changedColor(color){
-		const cirle	= document.querySelector('.circle') ;
-		cirle.style.background = color ;
-	}
-	function  changedButton(color){
-		const button	= document.querySelector('.button2') ;
-		button.style.background = color ;
-	}
-	function  changedColorText(color){
-		const cirle	= document.getElementById('h1ID') ;
-		cirle.style.color = color ;
-	}
-
-	//changed Text
-	function changedH1(anything){
-		document.getElementById('h1ID').innerHTML = anything;
-	}
-	function changedP(anything){
-		document.getElementById('pID').innerHTML = anything;
-	}
-
-//changed link button "MULAI"
-function changedLink(anything){
-		document.getElementById('linka').href = anything;
-	}
-</script>
+		</div>
+	</section>
+	<script src="assets/js/javas.js"></script>
 </body>
 </html>

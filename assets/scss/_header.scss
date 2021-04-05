@@ -12,6 +12,7 @@ header {
 	font-weight: 700;
 	font-size: 20px;
 	text-decoration: none;
+	color: $iconMiddle;
 }
 .containerSign {
 	align-items: flex-end;
@@ -37,8 +38,6 @@ header {
 	min-width: 100px;
 	border-radius: 10px;
 	background:$birumuda;
-}
-.buttonSign a {
 	text-decoration: none;
 	color: $white;
 	font-weight: 700;
