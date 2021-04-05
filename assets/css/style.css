@@ -394,20 +394,27 @@ a {
 }
 
 .subMenu {
+  position: relative;
   margin: 0;
   padding: 0;
-  height: 90vh;
   width: 100%;
-  height: 90vh;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
 }
 
-.containerSub {
-  width: 90vh;
-  height: 5vh;
+.boxList {
+  text-align: center;
+  background-color: red;
+  min-height: 1vh;
+  min-width: 1vw;
+  font-size: calc(1vh + 3vw);
 }
 /*# sourceMappingURL=style.css.map */
