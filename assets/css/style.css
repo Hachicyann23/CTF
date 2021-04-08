@@ -258,8 +258,8 @@ ul, li {
 }
 
 .ringMenu ul li.one {
-  -webkit-transform-origin: 150px 50px;
-          transform-origin: 150px 50px;
+  -webkit-transform-origin: 150px 40px;
+          transform-origin: 150px 40px;
   position: absolute;
   color: #ffa726;
 }
@@ -272,8 +272,8 @@ ul, li {
 }
 
 .ringMenu ul li.three {
-  -webkit-transform-origin: 30px -60px;
-          transform-origin: 30px -60px;
+  -webkit-transform-origin: 30px  -60px;
+          transform-origin: 30px  -60px;
   position: absolute;
   color: #9ccc65;
 }
@@ -393,28 +393,49 @@ a {
           filter: drop-shadow(7px 10px #524848c2);
 }
 
-.subMenu {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
+.containerSoal {
+  padding: 7.5vh 2.5vw;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.boxList {
+.box {
+  border: 1px solid black;
+  border-radius: 20px;
   text-align: center;
-  background-color: red;
-  min-height: 1vh;
-  min-width: 1vw;
-  font-size: calc(1vh + 3vw);
+  padding: 1.5rem 2rem;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+      grid-template-areas: ' judulSoal judulSoal judulSoal positionMenu jumlahPoin ' 'penjelasan penjelasan penjelasan penjelasan penjelasan ';
+}
+
+.box .judulSoal {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: judulSoal;
+}
+
+.box .positionMenu {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: positionMenu;
+}
+
+.box .jumlahPoin {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: jumlahPoin;
+}
+
+.box .penjelasan {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: penjelasan;
 }
 /*# sourceMappingURL=style.css.map */

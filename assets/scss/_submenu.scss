@@ -1,20 +1,30 @@
-//import to submenu1
-.subMenu {
-	position: relative;
-	margin: 0;
-	padding: 0;
-	width: 100%;height: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-content: space-around ;
+.containerSoal {
+
+	padding: 7.5vh 2.5vw;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
-.containerSub {
-}
-.boxList{
+.box {
+	border: 1px solid black;
+	border-radius: 20px;
 	text-align: center;
-	background-color: red;
-	min-height: 1vh;
-	min-width: 1vw;
-	font-size: calc(1vh + 3vw);
+	padding: 1.5rem 2rem;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-areas: ' judulSoal judulSoal judulSoal positionMenu jumlahPoin ' 'penjelasan penjelasan penjelasan penjelasan penjelasan ' ;
+	
+}
+.box .judulSoal{
+	grid-area: judulSoal;
+}
+.box .positionMenu{
+	grid-area: positionMenu;
+}
+.box .jumlahPoin {
+	grid-area: jumlahPoin;
+
+}
+.box .penjelasan  {
+	grid-area: penjelasan;
 }
